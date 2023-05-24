@@ -393,13 +393,14 @@ body {
     margin: 0;
 }
         
-.rodape {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #f8f8f8;
-    padding: 5px;
-    text-align: center;
-    font-size: 14px;
- }
+     .rodape {
+       position: fixed;
+       left: 0;
+       bottom: 75;
+       width: 10%;
+       height: 01px;
+       background-color: #f8f8f8;
+       padding: 01px;
+       text-align: left;
+       font-size: 14px;
+}
