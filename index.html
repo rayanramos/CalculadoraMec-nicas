@@ -1,0 +1,415 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+    <link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+    <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+    <style lang="en" type="text/css" id="dark-mode-native-style"></style>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <script type="e41f0cd5a212111a31a8b0a4-text/javascript" src="js/script.js"></script>
+    <title>CALCULADORA</title>
+    <link href="images/fusion.png.png" rel="icon">
+</head>
+
+<body>
+    <div class="imglg">
+        <img src="images/Screenshot_1.png" class="imglogo">
+        <div class="fc quadrotopo form-control">
+            <div style="margin: auto;width: 30%;flex: 0 0 auto;">
+
+                <h3>Nome do Cliente</h3>
+                <input type="text" placeholder="NOME DO CLIENTE" id="cliente_nome" name="cliente_nome"
+                    class="inputnumber form-control" size="8" style="margin-right:10px">
+            </div>
+
+            <div style="margin: auto;width: 30%;flex: 0 0 auto;">
+                <h3>RG do Cliente</h3>
+                <input type="number" placeholder="RG DO CLIENTE" id="cliente_rg" name="cliente_rg"
+                    class="inputnumber form-control" size="8" style="margin-right:10px">
+            </div>
+
+            <div style="margin: auto;width: 30%;flex: 0 0 auto;">
+                <h3>RG do Mecânico</h3>
+                <input type="number" placeholder="RG DO MECÂNICO" id="mec_rg" name="mec_rg"
+                    class="inputnumber form-control" size="8" style="margin-right:10px">
+            </div>
+
+        </div>
+    </div>
+   <div id="1" class="fc quadro form-control">
+        <hr>
+        <h3>
+            <font color="#022d42">TUNAGEM</font>
+        </h3>
+        <div class="col col-md-12">
+            <input id="Motor" type="checkbox" class="form-check-input" name="tunagem" value="100000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Motor">Motor</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Freio" type="checkbox" class="form-check-input" name="tunagem" value="60000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Freio">Freio</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Transmissão" type="checkbox" class="form-check-input" name="tunagem" value="90000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Transmissão">Transmissão</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Suspensão" type="checkbox" class="form-check-input" name="tunagem" value="65000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Suspensão">Suspensão</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Turbo" type="checkbox" class="form-check-input" name="tunagem" value="80000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Turbo">Turbo</label>
+        </div>
+    </div>
+    <div id="2" class="quadro form-control">
+        <hr>
+        <h3>
+            <font color="#022d42">ESTÉTICA</font>
+        </h3>
+        <div class="col col-md-12">
+            <input id="Vidro Fume" type="checkbox" class="form-check-input" name="tunagem" value="55000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Vidro Fume">Insufilm</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Saias" type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Saias">Saias</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Aerofólio" type="checkbox" class="form-check-input" name="tunagem" value="30000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Aerofólio">Aerofólio</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Para-choque dianteiro " type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Para-choque dianteiro">Para-Choque Dianteiro</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Para-choque traseiro " type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Para-choque traseiro">Para-Choque Traseiro</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Escapamento " type="checkbox" class="form-check-input" name="tunagem" value="30000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Escapamento">Escapamento</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Roll Cage" type="checkbox" class="form-check-input" name="tunagem" value="30000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Gaiola">Roll Cage</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Grelha " type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Grelha">Grade (Grelha)</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Capô " type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="capô">Capô</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Para-Lama " type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Para-Lama">Para-Lama</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Teto " type="checkbox" class="form-check-input" name="tunagem" value="70000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Teto">Teto</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Buzina " type="checkbox" class="form-check-input" name="tunagem" value="20000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Buzina">Buzina</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Neon " type="checkbox" class="form-check-input" name="tunagem" value="25000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Neon">Neon</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Xenon " type="checkbox" class="form-check-input" name="tunagem" value="25000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Xenon">Xenon</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Tipos de Rodas" type="checkbox" class="form-check-input" name="tunagem" value="10000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="rodas">Rodas Dianteira (Moto)</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Tipos de Rodas" type="checkbox" class="form-check-input" name="tunagem" value="10000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="rodas">Rodas Trazeira (Moto)</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Fumaça pneu" type="checkbox" class="form-check-input" name="tunagem" value="5000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="fumaça pneu">Fumaça pneu</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Interior Painel" type="checkbox" class="form-check-input" name="tunagem" value="15000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Interior Painel">Interior Painel</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Dial" type="checkbox" class="form-check-input" name="tunagem" value="15000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Dial">Dial</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Aerials" type="checkbox" class="form-check-input" name="tunagem" value="55000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Aerials">Aerials</label>
+        </div>
+    </div>
+    <div id="2" class="quadro form-control">
+        <hr>
+        <h3>
+            <font color="#022d42">ESTÉTICA 2</font>
+        </h3>
+        <div class="col col-md-12">
+            <input id="Janela" type="checkbox" class="form-check-input" name="tunagem" value="55000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Janela">Janela</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Ornaments" type="checkbox" class="form-check-input" name="tunagem" value="20000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Ornaments">Ornaments</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Speakers" type="checkbox" class="form-check-input" name="tunagem" value="25000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Speakers">Speakers</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Bloco De Motor " type="checkbox" class="form-check-input" name="tunagem" value="100000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Bloco De Motor">Bloco De Motor</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Banco" type="checkbox" class="form-check-input" name="tunagem" value="15000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Banco">Banco</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Roda" type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Roda">Roda</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Trunk" type="checkbox" class="form-check-input" name="tunagem" value="18000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Trunk">Trunk</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Portas" type="checkbox" class="form-check-input" name="tunagem" value="20000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Portas">Portas</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Tanque" type="checkbox" class="form-check-input" name="tunagem" value="15000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Tanque">Tanque</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Trim" type="checkbox" class="form-check-input" name="tunagem" value="20000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Trim">Trim</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Plate holder" type="checkbox" class="form-check-input" name="tunagem" value="15000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Plate holder">Plate holder</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Plaques" type="checkbox" class="form-check-input" name="tunagem" value="20000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Plate holder">Plaques</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Vanity plates" type="checkbox" class="form-check-input" name="tunagem" value="15000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Vanity plates">Vanity plates</label>
+        </div>
+        <div class="col col-md-12">
+            <input id=" Shift leavers " type="checkbox" class="form-check-input" name="tunagem" value="17000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for=" Shift leavers "> Shift leavers</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Struts" type="checkbox" class="form-check-input" name="tunagem" value="15000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Struts">Struts</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Steeringwheel" type="checkbox" class="form-check-input" name="tunagem" value="20000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Steeringwheel">Steeringwheel</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Filtro de ar" type="checkbox" class="form-check-input" name="tunagem" value="40000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Filtro de ar">Filtro de Ar</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Hidraulica" type="checkbox" class="form-check-input" name="tunagem" value="80000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Hidraulica">Hidráulica</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Arch cover" type="checkbox" class="form-check-input" name="tunagem" value="14000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Arch cover">Arch Cover</label>
+        </div>
+    </div>
+    <div id="4" class="quadro form-control">
+        <hr>
+        <h3>
+            <font color="#022d42">PINTURA</font>
+        </h3>
+        <div class="col col-md-12">
+            <input id="Cor Primaria" type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Cor Primaria">Cor Primaria</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Cor Secundaria" type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Cor Secundaria">Cor Secundaria</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Cor Secundaria" type="checkbox" class="form-check-input" name="tunagem" value="80000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Cor Secundaria">Perolado</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Decal" type="checkbox" class="form-check-input" name="tunagem" value="50000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Decal">Decal</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Pintura" type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Pintura">Pintura Primária</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Pintura" type="checkbox" class="form-check-input" name="tunagem" value="35000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Pintura">Pintura Secundária</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Cor Primaria Heli" type="checkbox" class="form-check-input" name="tunagem" value="40000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Pintura">Cor Primaria Heli</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Cor Secundaria Heli" type="checkbox" class="form-check-input" name="tunagem" value="40000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Pintura">Cor Secundaria Heli</label>
+        </div>
+        <div class="col col-md-12">
+            <input id="Cor Perolado Heli" type="checkbox" class="form-check-input" name="tunagem" value="90000"
+                onclick="if (!window.__cfRLUnblockHandlers) return false; calcular()"
+                data-cf-modified-e41f0cd5a212111a31a8b0a4->
+            <label class="form-check-label" for="Pintura">Cor Perolado Heli</label>
+        </div>
+    </div>
+    <div id="5" class="quadro form-control">
+        <h3>
+            <font color="#000000">VALOR TOTAL</font>
+        </h3>
+        <input type="text" id="valor" name="valor" class="form-control" readonly="true" size="5"
+            style="margin-right:15px"><br>
+        <button class="btn btn-danger" onclick="if (!window.__cfRLUnblockHandlers) return false; limpar()"
+            data-cf-modified-e41f0cd5a212111a31a8b0a4-><i class></i> Limpar</button>
+        <button class="alert alert-success" id="copiado" style="display: none;" role="alert">
+            <footer>
+            <div class="sub-footer text-center wow fadeIn" data-wow-duration="3s" data-wow-delay=".4s">
+                <span>2023 © KB Péllisser. Todos os Direitos Reservados.</span>
+            </div></footer>
+
+    </div>
+    </div>
+
+    <script
+        type="e41f0cd5a212111a31a8b0a4-text/javascript">(function () { window['__CF$cv$params'] = { r: '6d4ede693a774cf7', m: 'c1hW1Rh0H4tuZl0wsr8lc_PxHochVPe94cU5za3H6pc-1643421646-0-AZgReWNppiCIufGN9b0SQAKCqRsLtHcwRgDjgAZ+Ebwly7w0zsT9G6XS1O/UzoI0KiHefNZG3S1S37LGPme9exr6Q+bETOtZoXvE80b2jTfbfvhbNPPCZOseNmfBmgNt6A/HEo8div1AtL5xdFuLfRozIq3iNLhezke9DJu8FQdEnFcZ+SAUTYcHVynGr69bHeJn9/0I1C6Z2kVFP5+t1xjmrXaI1cyd880XCyhvg3kG', s: [0xa3d3168605, 0xba02de72f3], } })();</script>
+    <script
+        type="e41f0cd5a212111a31a8b0a4-text/javascript">(function () { window['__CF$cv$params'] = { r: '6d55320baf256030', m: 'ZIEu.pp.iZbUyq5KJvDLfjpPqMeOMxiNGM_gE_5Duyk-1643487986-0-AcUKQeDM0xlzizuzSCE1OWs4UCC/gTki/Wf/ptjXki9iQ5VGlYhrXoxDtlJyTdabd/omn/0PoOs+p2TFELZ2mXXA6xQBQ2b+78uInsszFfSZ930uS3lQhVc0pV+mm90Hi0ieWJJmSuym9EtYDi4CGxRFI1YKe+wVHyalMeXttvlzsYErYN8azcWTRNNeh5t9RbTkmCwQHWLPNxXvCr0wo0DuT9CtjXmfznyCLMi9IUpe', s: [0x6efed7905d, 0x60ab50310e], } })();</script>
+    <script src="js/jquery.min.js" type="e41f0cd5a212111a31a8b0a4-text/javascript"></script>
+    <script src="js/rocket-loader.min.js" data-cf-settings="e41f0cd5a212111a31a8b0a4-|49" defer></script>
+    <footer>
+             <div class="col-md-12">
+                  <p>Desenvolvido por <a href="https://www.instagram.com/rayanramosoficial/" target="_blank">KB Péllisser</a> © 2023</p>
+      </footer>
+
+</body>
+
+</html>
